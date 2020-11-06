@@ -7,11 +7,11 @@ try:
     browser = webdriver.Chrome()
     browser.get(link)
     input1 = browser.find_element_by_name('firstname')
-    input1.send_keys('M')
+    input1.send_keys('Marya')
     input2 = browser.find_element_by_name('lastname')
-    input2.send_keys("M")
+    input2.send_keys("Ivanova")
     input3 = browser.find_element_by_name('email')
-    input3.send_keys("M")
+    input3.send_keys("test@test.com")
 
     # генерация тестового файла
     with open('test1.txt', 'w') as file:
